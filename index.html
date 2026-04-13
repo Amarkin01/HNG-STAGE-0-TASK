@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <section data-testid = "test-todo-card" class="card" >
+        <div class="card-title">
+            <h2 data-testid = "test-todo-title">Stage 0 Task</h2>
+            <span data-testid = "test-todo-priority" class="priority">Medium</span>
+        </div>
+
+        <p 
+        data-testid = "test-todo-description" class="description"
+        >
+            Build a single todo card using HTML, CSS and Javascript
+        </p>
+
+        <div class="time-frame">
+            <time 
+                data-testid = "test-todo-due-date"
+                datetime="2026-04-16"
+            >
+                Due April 16, 2026
+            </time>
+            <span
+                data-testid="test-todo-time-remaining" 
+                aria-live="polite"
+            >
+                Updating...
+            </span>
+            <strong data-testid = "test-todo-status">Pending</strong>
+        </div>
+
+        <ul data-testid = "test-todo-tags" class="tag">
+            <li data-testid = "test-todo-tag-work" class="tag-list">Work</li>
+            <li data-testid = "test-todo-tag-urgent" class="tag-list">Urgent</li>
+        </ul>
+
+        <div class="control">
+            <label for="completeToggle">
+                <input 
+                    id="completeToggle"
+                    type="checkbox"
+                    data-testid = "test-todo-complete-toggle"  
+                >
+                <span>Mark as Done</span>
+            </label>
+            <div>
+                <button data-testid = "test-todo-edit-button" class="edit">Edit</button>
+                <button data-testid = "test-todo-delete-button" class="delete">Delete</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
