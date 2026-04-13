@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
     document.querySelector('[data-testid="test-todo-edit-button"]').onclick = () => {
-        alert("You can now edit the todo");
+        alert("You have edited the todo");
 
     };
 
